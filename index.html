@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schnitzel by Baca Menüsü</title>
+    <style>
+        /* Logonun ve Sitenin Yeni Renk Paleti */
+        :root {
+            /* DÜZELTME: Buradaki ## işareti tek # yapıldı */
+            --baca-yellow: #F3C35F;   /* Logoya yakın ana sarı/turuncu */
+            --baca-dark: #2C2C2C;     /* Logo çerçevesinden gelen koyu gri/siyah */
+            --baca-light: #FFFAE6;    /* Çok açık sarı arka plan */
+            --baca-white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--baca-light);
+            color: var(--baca-dark);
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+        /* HEADER & LOGO ALANI */
+        header {
+            /* Arka plan rengi 'baca-yellow' olarak ayarlandı */
+            background-color: var(--baca-yellow); 
+            color: var(--baca-dark);
+            text-align: center;
+            padding: 20px 20px 40px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Alt çizgi rengini koyu yaparak kontrast sağladık */
+            border-bottom: 5px solid var(--baca-dark); 
+        }
+
+        /* YENİ LOGO STİLİ */
+        .logo-img {
+            max-width: 150px; /* Görünmesi için boyutu biraz artırdım, isterseniz küçültün */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%; /* Logoya yuvarlak bir hava katar, isteğe bağlı */
+            border: 3px solid var(--baca-dark); /* Logo etrafına çerçeve */
+        }
+        
+        header p {
+            font-size: 1.2em;
+            margin: 15px 0 0 0;
+            font-weight: bold;
+            color: var(--baca-dark);
+            font-family: 'Permanent Marker', cursive; /* Başlıkta el yazısı fontu kullanıldı */
+        }
+        
+        /* MENU STİLLERİ */
+        .menu-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        
+        .menu-section { 
+            margin-bottom: 40px; 
+            padding: 20px; 
+            background-color: var(--baca-white); 
+            border-radius: 10px; 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+            border: 2px solid var(--baca-yellow); 
+        }
+
+        .menu-section h2 { 
+            color: var(--baca-dark); 
+            border-bottom: 3px solid var(--baca-yellow); 
+            padding-bottom: 10px; 
+            margin-top: 0; 
+            font-size: 2.2em; 
+            text-align: center; 
+            margin-bottom: 25px; 
+            text-transform: uppercase; 
+        }
+
+        .menu-item { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 25px; 
+            padding: 15px; 
+            border-left: 5px solid var(--baca-yellow); 
+            background-color: var(--baca-light); 
+            border-radius: 5px; 
+            transition: background-color 0.3s; 
+        }
+
+        .menu-item:hover { background-color: #FFF2C0; }
+        
+        .item-image { 
+            width: 100px; 
+            height: 100px; 
+            object-fit: cover; 
+            border-radius: 5px; 
+            border: 2px solid var(--baca-dark); 
+            margin-right: 20px; 
+            flex-shrink: 0; 
+        }
+
+        .menu-details { flex-grow: 1; }
+        .menu-details h3 { margin: 0 0 5px 0; font-size: 1.4em; color: var(--baca-dark); }
+        .menu-details p { margin: 0; font-size: 0.9em; color: #555; }
+        
+        .price { 
+            font-weight: bold; 
+            font-size: 1.5em; 
+            color: var(--baca-yellow); /* Fiyat yazısı sarı */
+            background-color: var(--baca-dark); /* Arka plan siyah */
+            padding: 8px 15px; 
+            border-radius: 5px; 
+            flex-shrink: 0; 
+            letter-spacing: 1px; 
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            background-color: var(--baca-dark); 
+            color: var(--baca-white); 
+            margin-top: 40px; 
+            font-size: 0.9em; 
+            border-top: 5px solid var(--baca-yellow); 
+        }
+        footer p { margin: 5px 0; }
+
+        @media (max-width: 600px) {
+            .logo-img { max-width: 120px; }
+            .menu-item { flex-direction: column; text-align: center; }
+            .item-image { margin: 0 0 15px 0; }
+            .menu-details { margin-bottom: 10px; }
+            .price { font-size: 1.3em; width: 100%; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img 
+            src="C:\Users\tuvan\Desktop\Yeni klasör\Ekran görüntüsü 2025-12-15 152519.png"
+            alt="Schnitzel by Baca Logosu" 
+            class="logo-img"
+        >
+    </header>
+
+    <div class="menu-container">
+        <section class="menu-section">
+            <h2>Ana Yemekler</h2>
+            <div class="menu-item">
+                <img class="item-image" src="https://via.placeholder.com/100/FFC300/2C2C2C?text=Tavuk" alt="Tavuk Schnitzel">
+                <div class="menu-details">
+                    <h3>Tavuk Schnitzel Klasik</h3>
+                    <p>Özel marine edilmiş çıtır tavuk filetosu, yanında ev yapımı patates kızartması.</p>
+                </div>
+                <span class="price">₺180</span>
+            </div>
+            <div class="menu-item">
+                <img class="item-image" src="https://via.placeholder.com/100/FFC300/2C2C2C?text=Dana" alt="Dana Schnitzel">
+                <div class="menu-details">
+                    <h3>Dana Schnitzel Viyana Usulü</h3>
+                    <p>İnce dövülmüş dana eti, limon dilimi ve tereyağlı pilav ile otantik lezzet.</p>
+                </div>
+                <span class="price">₺240</span>
+            </div>
+            <div class="menu-item">
+                <img class="item-image" src="https://via.placeholder.com/100/FFC300/2C2C2C?text=Sebze" alt="Sebze Schnitzel">
+                <div class="menu-details">
+                    <h3>Vejetaryen Sebze Schnitzel</h3>
+                    <p>Mevsim sebzeleri ve baharatlarla hazırlanmış çıtır köfte, hafif sos eşliğinde.</p>
+                </div>
+                <span class="price">₺150</span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Yan Lezzetler</h2>
+            <div class="menu-item">
+                <img class="item-image" src="https://via.placeholder.com/100/2C2C2C/FFC300?text=Patates" alt="Patates Kızartması">
+                <div class="menu-details">
+                    <h3>Baca Özel Patates</h3>
+                    <p>El yapımı, baharatlı ve çıtır çıtır patates dilimleri.</p>
+                </div>
+                <span class="price">₺70</span>
+            </div>
+            <div class="menu-item">
+                <img class="item-image" src="https://via.placeholder.com/100/2C2C2C/FFC300?text=Salata" alt="Salata">
+                <div class="menu-details">
+                    <h3>Taze Mevsim Salata</h3>
+                    <p>Özel sos ile yeşillikler, domates ve salatalık.</p>
+                </div>
+                <span class="price">₺60</span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>İçecekler</h2>
+            <div class="menu-item">
+                <img class="item-image" src="https://via.placeholder.com/100/CCCCCC/2C2C2C?text=İçecek" alt="Soğuk İçecekler">
+                <div class="menu-details">
+                    <h3>Çeşitli Soğuk İçecekler</h3>
+                    <p>Kola, Fanta, Ayran, Su ve Maden Suyu seçenekleri.</p>
+                </div>
+                <span class="price">₺40</span>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>📍 Merkez Mah. Lezzet Sok. No: 10, İstanbul</p>
+        <p>📞 Sipariş ve Rezervasyon: (0212) BACA-5555</p>
+        <p>&copy; 2023 Schnitzel by Baca. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>
