@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schnitzel by Baca Menüsü</title>
     <style>
-        /* Logonun ve Sitenin Yeni Renk Paleti */
+
         :root {
-            /* DÜZELTME: Buradaki ## işareti tek # yapıldı */
-            --baca-yellow: #F3C35F;   /* Logoya yakın ana sarı/turuncu */
-            --baca-dark: #2C2C2C;     /* Logo çerçevesinden gelen koyu gri/siyah */
-            --baca-light: #FFFAE6;    /* Çok açık sarı arka plan */
+            
+            --baca-yellow: #F3C35F;   
+            --baca-dark: #2C2C2C;     
+            --baca-light: #FFFAE6;    
             --baca-white: #FFFFFF;
         }
 
@@ -24,26 +24,25 @@
         
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-        /* HEADER & LOGO ALANI */
+
         header {
-            /* Arka plan rengi 'baca-yellow' olarak ayarlandı */
+
             background-color: var(--baca-yellow); 
             color: var(--baca-dark);
             text-align: center;
             padding: 20px 20px 40px 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            /* Alt çizgi rengini koyu yaparak kontrast sağladık */
+
             border-bottom: 5px solid var(--baca-dark); 
         }
 
-        /* YENİ LOGO STİLİ */
         .logo-img {
-            max-width: 150px; /* Görünmesi için boyutu biraz artırdım, isterseniz küçültün */
+            max-width: 150px; 
             height: auto;
             display: block;
             margin: 0 auto;
-            border-radius: 50%; /* Logoya yuvarlak bir hava katar, isteğe bağlı */
-            border: 3px solid var(--baca-dark); /* Logo etrafına çerçeve */
+            border-radius: 50%;
+            border: 3px solid var(--baca-dark); 
         }
         
         header p {
@@ -51,10 +50,10 @@
             margin: 15px 0 0 0;
             font-weight: bold;
             color: var(--baca-dark);
-            font-family: 'Permanent Marker', cursive; /* Başlıkta el yazısı fontu kullanıldı */
+            font-family: 'Permanent Marker', cursive; 
         }
         
-        /* MENU STİLLERİ */
+       
         .menu-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
         
         .menu-section { 
@@ -107,8 +106,8 @@
         .price { 
             font-weight: bold; 
             font-size: 1.5em; 
-            color: var(--baca-yellow); /* Fiyat yazısı sarı */
-            background-color: var(--baca-dark); /* Arka plan siyah */
+            color: var(--baca-yellow); 
+            background-color: var(--baca-dark); 
             padding: 8px 15px; 
             border-radius: 5px; 
             flex-shrink: 0; 
@@ -214,4 +213,5 @@
 </body>
 
 </html>
+
 
