@@ -83,7 +83,7 @@
         
         .menu-details { flex-grow: 1; }
         .menu-details h3 { margin: 0; font-size: 1.1em; color: var(--baca-dark); }
-        .menu-details p { margin: 2px 0 0 0; font-size: 0.8em; color: #777; font-style: italic; }
+        .menu-details p { margin: 2px 0 0 0; font-size: 0.8em; color: #777; }
         
         .price { 
             font-weight: bold; 
@@ -92,7 +92,7 @@
             background-color: var(--baca-dark); 
             padding: 4px 10px; 
             border-radius: 5px; 
-            min-width: 65px;
+            min-width: 60px;
             text-align: center;
         }
 
@@ -111,6 +111,87 @@
     <header>
         <img src="logo.png" alt="Cafe Baca Şinitzel" class="logo-img">
     </header>
+
+    <div class="menu-container">
+        
+        <section class="menu-section">
+            <h2>Kahvaltı</h2>
+            <div class="menu-item">
+                <div class="menu-details"><h3>Kahvaltı Tabağı</h3></div>
+                <span class="price">00,00</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-details">
+                    <h3>Sahanda Yumurta Çeşitleri</h3>
+                    <p>(Sucuklu, Peynirli)</p>
+                </div>
+                <span class="price">00,00</span>
+            </div>
+
+            <div class="sub-category">Tostlar</div>
+            <div class="menu-item"><div class="menu-details"><h3>Kaşarlı Tost</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Karışık Tost</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Sucuklu Tost</h3></div><span class="price">00,00</span></div>
+
+            <div class="sub-category">Kruvasanlar</div>
+            <div class="menu-item"><div class="menu-details"><h3>Sade</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Çikolatalı</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Kaşar Peynirli</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Kaşar Peynirli Jambonlu</h3></div><span class="price">00,00</span></div>
+
+            <div class="sub-category">Börekler</div>
+            <div class="menu-item"><div class="menu-details"><h3>Peynirli</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Patatesli</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Ispanaklı</h3></div><span class="price">00,00</span></div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Çorbalar</h2>
+            <div class="menu-item">
+                <div class="menu-details"><h3>Günün Çorbası</h3></div>
+                <span class="price">00,00</span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Salatalar</h2>
+            <div class="menu-item"><div class="menu-details"><h3>Akdeniz Salatası</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Tulum Peynirli Roka Salatası</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Çıtır Tavuk Salata</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Et Şinitzel Salata</h3></div><span class="price">00,00</span></div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Sıcak Başlangıçlar</h2>
+            <div class="menu-item"><div class="menu-details"><h3>Peynir Soslu Kızarmış Ginocchi</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Patates Kızartması</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Çıtır Atıştırmalık Tabağı</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item">
+                <div class="menu-details"><h3>Dana Sosis Kızartma</h3><p>Patates İle</p></div>
+                <span class="price">00,00</span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Ana Yemekler - Et</h2>
+            <div class="menu-item"><div class="menu-details"><h3>Et Şinitzel</h3></div><span class="price">₺900</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Mantar Soslu Et Şinitzel</h3></div><span class="price">₺1100</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Et Şinitzel Burger</h3></div><span class="price">₺500</span></div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Tavuk & Hindi & Vegan</h2>
+            <div class="menu-item"><div class="menu-details"><h3>Tavuk Şinitzel</h3></div><span class="price">₺500</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Hindi Şinitzel Milanez</h3></div><span class="price">₺600</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Vegan Şinitzel</h3></div><span class="price">₺600</span></div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Tatlılar</h2>
+            <div class="menu-item"><div class="menu-details"><h3>Apple Struder</h3></div><span class="price">₺290</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Orman Meyveli Tart</h3></div><span class="price">₺290</span></div>
+        </section>
+    </div>
 
     <div class="menu-container">
         
