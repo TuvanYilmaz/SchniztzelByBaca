@@ -56,7 +56,7 @@
             border-bottom: 3px solid var(--baca-yellow); 
             padding-bottom: 10px; 
             margin-top: 0; 
-            font-size: 2em; 
+            font-size: 2.2em; 
             text-align: center; 
             margin-bottom: 25px; 
             text-transform: uppercase; 
@@ -64,17 +64,18 @@
 
         .sub-category {
             font-weight: bold;
-            font-size: 1.1em;
-            margin: 15px 0 10px 5px;
-            color: #888;
-            text-transform: uppercase;
-            border-bottom: 1px dashed #ddd;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+            color: var(--baca-dark);
+            text-transform: capitalize;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
         }
 
         .menu-item { 
             display: flex; 
             align-items: center; 
-            margin-bottom: 10px; 
+            margin-bottom: 8px; 
             padding: 8px 15px; 
             border-left: 4px solid var(--baca-yellow); 
             background-color: var(--baca-light); 
@@ -82,27 +83,28 @@
         }
         
         .menu-details { flex-grow: 1; }
-        .menu-details h3 { margin: 0; font-size: 1.1em; color: var(--baca-dark); }
-        .menu-details p { margin: 2px 0 0 0; font-size: 0.8em; color: #777; }
+        .menu-details h3 { margin: 0; font-size: 1.1em; color: var(--baca-dark); font-weight: 500; }
+        .menu-details p { margin: 2px 0 0 0; font-size: 0.85em; color: #666; font-style: italic; }
         
         .price { 
             font-weight: bold; 
             font-size: 1.1em; 
             color: var(--baca-yellow); 
             background-color: var(--baca-dark); 
-            padding: 4px 10px; 
+            padding: 4px 12px; 
             border-radius: 5px; 
-            min-width: 60px;
+            min-width: 70px;
             text-align: center;
+            letter-spacing: 0.5px;
         }
 
         footer { 
             text-align: center; 
-            padding: 20px; 
+            padding: 25px; 
             background-color: var(--baca-dark); 
             color: var(--baca-white); 
             margin-top: 40px; 
-            font-size: 0.9em; 
+            font-size: 0.95em; 
             border-top: 5px solid var(--baca-yellow); 
         }
     </style>
@@ -123,7 +125,7 @@
             <div class="menu-item">
                 <div class="menu-details">
                     <h3>Sahanda Yumurta Çeşitleri</h3>
-                    <p>(Sucuklu, Peynirli)</p>
+                    <p>(sucuklu, peynirli)</p>
                 </div>
                 <span class="price">00,00</span>
             </div>
@@ -146,15 +148,11 @@
         </section>
 
         <section class="menu-section">
-            <h2>Çorbalar</h2>
-            <div class="menu-item">
-                <div class="menu-details"><h3>Günün Çorbası</h3></div>
-                <span class="price">00,00</span>
-            </div>
-        </section>
+            <h2>Çorbalar & Salatalar</h2>
+            <div class="sub-category">Çorbalar</div>
+            <div class="menu-item"><div class="menu-details"><h3>Günün Çorbası</h3></div><span class="price">00,00</span></div>
 
-        <section class="menu-section">
-            <h2>Salatalar</h2>
+            <div class="sub-category">Salatalar</div>
             <div class="menu-item"><div class="menu-details"><h3>Akdeniz Salatası</h3></div><span class="price">00,00</span></div>
             <div class="menu-item"><div class="menu-details"><h3>Tulum Peynirli Roka Salatası</h3></div><span class="price">00,00</span></div>
             <div class="menu-item"><div class="menu-details"><h3>Çıtır Tavuk Salata</h3></div><span class="price">00,00</span></div>
@@ -167,34 +165,42 @@
             <div class="menu-item"><div class="menu-details"><h3>Patates Kızartması</h3></div><span class="price">00,00</span></div>
             <div class="menu-item"><div class="menu-details"><h3>Çıtır Atıştırmalık Tabağı</h3></div><span class="price">00,00</span></div>
             <div class="menu-item">
-                <div class="menu-details"><h3>Dana Sosis Kızartma</h3><p>Patates İle</p></div>
+                <div class="menu-details"><h3>Dana Sosis Kızartma</h3><p>Patates ile</p></div>
                 <span class="price">00,00</span>
             </div>
         </section>
 
         <section class="menu-section">
-            <h2>Ana Yemekler - Et</h2>
-            <div class="menu-item"><div class="menu-details"><h3>Et Şinitzel</h3></div><span class="price">₺900</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Mantar Soslu Et Şinitzel</h3></div><span class="price">₺1100</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Et Şinitzel Burger</h3></div><span class="price">₺500</span></div>
+            <h2>Ana Yemekler</h2>
+            <div class="menu-item">
+                <div class="menu-details"><h3>Kuzu İncik</h3><p>Patates Püresi Eşliğinde</p></div>
+                <span class="price">1000,00</span>
+            </div>
+
+            <div class="sub-category">Et Şinitzeller</div>
+            <div class="menu-item"><div class="menu-details"><h3>Et Şinitzel</h3></div><span class="price">900,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Mantar Soslu Et Şinitzel</h3></div><span class="price">1100,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Alaşef Soslu Et Şinitzel</h3></div><span class="price">1100,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Arabiata Soslu Et Şinitzel</h3></div><span class="price">1000,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Et Şinitzel Burger</h3></div><span class="price">500,00</span></div>
+
+            <div class="sub-category">Hindi Şinitzeller</div>
+            <div class="menu-item"><div class="menu-details"><h3>Hindi Şinitzel Milanez</h3></div><span class="price">600,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Pesto Soslu Hindi Şinitzel</h3></div><span class="price">750,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Ginocchi Kremalı Hindi Şinitzel</h3></div><span class="price">800,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Kremalı Mantar Soslu Hindi Şinitzel</h3></div><span class="price">700,00</span></div>
+
+            <div class="sub-category">Tavuk Şinitzeller</div>
+            <div class="menu-item"><div class="menu-details"><h3>Tavuk Şinitzel</h3></div><span class="price">500,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Pesto Soslu Ginocchili Tavuk Şinitzel</h3></div><span class="price">650,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Gurme Şinitzel</h3></div><span class="price">600,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Peynir Soslu Tavuk Şinitzel</h3></div><span class="price">600,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Tavuk Şinitzel Burger</h3></div><span class="price">350,00</span></div>
+
+            <div class="sub-category">Vegan Şinitzel</div>
+            <div class="menu-item"><div class="menu-details"><h3>Sebzeli Vegan Şinitzel</h3></div><span class="price">600,00</span></div>
         </section>
 
-        <section class="menu-section">
-            <h2>Tavuk & Hindi & Vegan</h2>
-            <div class="menu-item"><div class="menu-details"><h3>Tavuk Şinitzel</h3></div><span class="price">₺500</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Hindi Şinitzel Milanez</h3></div><span class="price">₺600</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Vegan Şinitzel</h3></div><span class="price">₺600</span></div>
-        </section>
-
-        <section class="menu-section">
-            <h2>Tatlılar</h2>
-            <div class="menu-item"><div class="menu-details"><h3>Apple Struder</h3></div><span class="price">₺290</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Orman Meyveli Tart</h3></div><span class="price">₺290</span></div>
-        </section>
-    </div>
-
-    <div class="menu-container">
-        
         <section class="menu-section">
             <h2>Tatlılar</h2>
             <div class="menu-item"><div class="menu-details"><h3>Apple Struder</h3></div><span class="price">290,00</span></div>
@@ -202,8 +208,8 @@
         </section>
 
         <section class="menu-section">
-            <h2>Sıcak İçecekler</h2>
-            <div class="sub-category">Çaylar</div>
+            <h2>İçecekler</h2>
+            <div class="sub-category">Sıcak İçecekler</div>
             <div class="menu-item"><div class="menu-details"><h3>Demleme Çay</h3></div><span class="price">60,00</span></div>
             <div class="menu-item">
                 <div class="menu-details">
@@ -212,30 +218,17 @@
                 </div>
                 <span class="price">70,00</span>
             </div>
-
-            <div class="sub-category">Kahveler</div>
             <div class="menu-item"><div class="menu-details"><h3>Espresso</h3></div><span class="price">120,00</span></div>
             <div class="menu-item"><div class="menu-details"><h3>Double Espresso</h3></div><span class="price">150,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Americano</h3></div><span class="price">150,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Macchiato</h3></div><span class="price">160,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Cappucino</h3></div><span class="price">160,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Caffe Latte</h3></div><span class="price">160,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Caffe Mocha</h3></div><span class="price">160,00</span></div>
             <div class="menu-item"><div class="menu-details"><h3>Türk Kahvesi</h3></div><span class="price">120,00</span></div>
-        </section>
+            <div class="menu-item"><div class="menu-details"><h3>Caffe Latte / Cappucino</h3></div><span class="price">160,00</span></div>
 
-        <section class="menu-section">
-            <h2>Soğuk İçecekler</h2>
-            <div class="menu-item"><div class="menu-details"><h3>Coca Cola / Zero / Light</h3></div><span class="price">00,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Sprite / Fanta</h3></div><span class="price">00,00</span></div>
+            <div class="sub-category">Soğuk İçecekler</div>
+            <div class="menu-item"><div class="menu-details"><h3>Coca Cola / Fanta / Sprite</h3></div><span class="price">00,00</span></div>
             <div class="menu-item"><div class="menu-details"><h3>Ice Latte</h3></div><span class="price">160,00</span></div>
             <div class="menu-item"><div class="menu-details"><h3>Milkshake</h3></div><span class="price">140,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Kahveli Milkshake</h3></div><span class="price">160,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Meyve Suları</h3></div><span class="price">00,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Soğuk Çaylar / Limonata</h3></div><span class="price">00,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Enerji İçeceği</h3></div><span class="price">00,00</span></div>
+            <div class="menu-item"><div class="menu-details"><h3>Limonata</h3></div><span class="price">00,00</span></div>
             <div class="menu-item"><div class="menu-details"><h3>Ayran / Soda</h3></div><span class="price">00,00</span></div>
-            <div class="menu-item"><div class="menu-details"><h3>Beyoğlu Gazoz</h3></div><span class="price">00,00</span></div>
             <div class="menu-item"><div class="menu-details"><h3>Su</h3></div><span class="price">00,00</span></div>
         </section>
 
